@@ -1,16 +1,16 @@
 from core import PeriodicFunction
 
 def f1():
-    print("f1")
+    print("Each 1 second")
 
 def f2():
-    print("f2")
+    print("Each 3 seconds")
 
 def f3():
-    print("f3")
+    print("Each 10 seconds")
 
-myfnc1 = PeriodicFunction(f1, 3)
-myfnc2 = PeriodicFunction(f2, 1)
+myfnc1 = PeriodicFunction(f1, 1)
+myfnc2 = PeriodicFunction(f2, 3)
 myfnc3 = PeriodicFunction(f3, 10)
 
 while 1:

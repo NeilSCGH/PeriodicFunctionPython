@@ -1,7 +1,3 @@
-"""
-Source https://github.com/NeilSCGH/PeriodicFunctionPython
-"""
-
 from time import time
 
 class PeriodicFunction():
