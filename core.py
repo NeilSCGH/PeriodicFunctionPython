@@ -8,5 +8,7 @@ class PeriodicFunction():
 
     def tryRun(self):
         if time() - self.lastRunTime >= self.interval:
-            self.function()#run the function
+            returnVal = self.function()#run the function
             self.lastRunTime = time()
+            return True, returnVal
+        return False, None

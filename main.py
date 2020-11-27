@@ -2,6 +2,7 @@ from core import PeriodicFunction
 
 def f1():
     print("Each 1 second")
+    return 42
 
 def f2():
     print("Each 3 seconds")
@@ -14,6 +15,8 @@ myfnc2 = PeriodicFunction(f2, 3)
 myfnc3 = PeriodicFunction(f3, 10)
 
 while 1:
-    myfnc1.tryRun()
+    runned, returnVal = myfnc1l.tryRun()
+    if runned: print(returnVal)
+
     myfnc2.tryRun()
     myfnc3.tryRun()
